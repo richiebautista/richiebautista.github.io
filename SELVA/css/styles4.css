@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background:black;
+    color:white;
+    padding:20px;
+    font-weight: bold;
+    box-shadow: 2px 3px 10px 1px rgba(38,38,38,1);
+    text-shadow: 3px 1px 3px rgba(255, 255, 255, 0.78);
+}
+body{
+   /* background-color: #05b305;*/
+   background: linear-gradient(to right, #000000, #0f9b0f);
+ 
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:  center; 
+    color:white;   
+}
+
+.vecinos{
+    border-bottom-style: solid;
+    border-color: white;
+    border-width: 1px;
+    padding:70px;
+    text-align: center;
+    width: 65%;
+    margin: 0 auto;
+    color:white;
+}
+
+
+.flotante1{
+    background: white;
+    width:50%;
+    color: black;
+    font-size:18px;
+    text-align: center;
+    padding:100px;
+    border-radius:22px;
+    position:absolute;
+    left:15%;
+    top:25%;
+    display:none;
+}
+
+#cerrar{
+    position:absolute;
+right:3px;
+top:1px;
+}
+
+
+#content{
+   /* padding: 3.5em 1.75em;*/
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: start;*/
+    margin:2px; 
+}
+.principal  .box1, .box2,.box4, .box5{
+    box-shadow: 2px 3px 10px 1px rgba(38,38,38,1);
+    background-color: #014901;
+}
+
+.principal{
+    margin:15px 80px 15px 80px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows:minmax(75px, 150px);
+    grid-gap:25px;
+    grid-template-areas: 
+    "uno dos"
+    "uno dos"
+    "cuatro cinco"
+    "cuatro cinco";
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border-style: solid;
+    border-width: 1px;*/
+    text-align: justify;
+    /*background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 4px;*/
+    text-shadow: 3px 4px 3px rgba(0,0,0,0.78);
+}
+/*
+.item:hover{  
+    -ms-transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+    border-style: none;
+    border-width: 1px;
+    border-color:black;
+    padding:2vmax 2vmax;
+    }
+*/
+    .box1{
+        grid-area: uno; 
+        background-repeat: round;
+        color:white;
+    }
+
+    .box1:hover, .box2:hover ,.box4:hover, .box5:hover{
+        color:black;
+    }
+    .box2{
+        grid-area: dos; 
+        color:white;
+       padding:40px;
+    }
+    .box4{
+        grid-area: cuatro; 
+        color:white;
+    }
+    .box5{
+        grid-area: cinco; 
+        color:white;
+    }
+
+footer{
+    background: black;
+    padding:30px;
+}
+    .button {
+        background-color:red;
+        color:white;
+        padding:2vmin 2vmax;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size:1em;
+        margin: 20px 5px;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4;
+        cursor: pointer;
+    }
+
+    a{
+        text-decoration: none;
+    }   
+.button1, .button2, .button3,.button4,.button5{
+    background-color: white;
+    color:black;
+    border:2px solid #014901;
+}
+
+.button1:hover,.button2:hover, .button3:hover,.button4:hover,.button5:hover{
+    background-color: #014901;
+    color:white;
+    font-weight: bold;
+    border:2px solid white;
+}
+
+/*RESPONSIVE*/
+
+@media only screen and (max-width:768px){
+    .principal{
+        /*background: linear-gradient(to right, #f0f2f0, #000000);*/
+       /* margin-bottom: -350px;*/
+        margin:1px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        grid-auto-rows:minmax(100px, 350px);
+        grid-gap:15px;
+        grid-template-areas: 
+        "uno" 
+        "dos"
+        "cuatro"
+        "cinco";
+    }
+    #content{
+       padding:2em 1em; 
+       margin:5px;
+     
+    }
+    p{
+        font-size: 20px;
+    }
+
+    .flotante1{
+        background: white;
+        width:60%;
+        color: black;
+        font-size:18px;
+        text-align: center;
+        padding:50px;
+        border-radius:22px;
+        position:absolute;
+        left:10%;
+    }
+}
+@media only screen and (max-width:425px){
+    p{
+        font-size:15px;
+    }
+}
