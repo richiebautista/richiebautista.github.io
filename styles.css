@@ -116,11 +116,11 @@ h1{
     "dos dos doss doss "
     "tres tres tress tress "
     "cuatro cuatro cuatros cuatros"
-    "cinco cinco cincos cincos"
+    
     ;
     
 }
-.principal  .box1, .box2,.box22,.box3,.box33,.box4,.box5,.box44,.box55{
+.principal  .box1, .box2,.box22,.box3,.box33,.box4,.box44{
     border-bottom-style: solid;
     border-color: white;
     border-width: 1px;
@@ -219,7 +219,7 @@ h1{
     color:white;
     background-image: url("img/valores2.jpg"); 
 }
-
+/*
 .box5{
     grid-area: cincos;
     color:white;
@@ -230,7 +230,7 @@ h1{
     grid-area: cinco;
     background-image: url("img/gallery2.jpg"); 
 }
-
+*/
 
 footer{
   /*  background: linear-gradient(to right, #000000, #0f9b0f);*/

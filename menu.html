@@ -19,8 +19,7 @@
 <div class="flotante1 wow bounceInDown" id="flot">
                 <div id="cerrar">
                    <a href="javascript:cerrar()">
-                                <img src="img/error.png">
-          
+                                
                    </a>    
                       </div>       
                 <p>
@@ -52,6 +51,25 @@
         
         <div class ="principal">
                
+
+                <div class="item box0 wow bounceInLeft" id="flotprimero">
+                        
+                      
+                              <p class="texto_flotante">
+                                 COMPARTE TU SUGERENCIA
+                                </p>   
+                                <br>
+                                <textarea rows="7" cols ="40" autofocus>
+
+                                </textarea> 
+                                <br>  
+                                <center>
+                                                <button class="button button4">
+                                                        <a href="menu.html">
+                                                               ENVIAR   </a>
+                                                    </button>  
+                                            </center>
+                  </div>
                 <div class = "item box1 wow flipInX" id="1">
                         <p>
                                 SUGERENCIAS
@@ -59,6 +77,7 @@
                                 <br>        
                                 Tu opinion es importante.
                                 </p> 
+                                
                                 <br>
                                 <button class="button button2">
                                         <a href="javascript:abrir()">
@@ -82,7 +101,7 @@
                                 </p>
                 </div>
 
-                <div class = "item box5 wow flipInX">
+                <div class = "item box5 wow flipInX" id="2">
                         <p>
                                 ¿Tienes lotes/terrenos disponibles?
                         </p>
@@ -93,6 +112,27 @@
                                     </button>  
                              
                 </div>
+
+                <div class="item box6 wow bounceInRight" id="flotultimo">
+                        
+                      
+                                <p class="texto_flotante">
+                                   DESCRIBE TU LOTE/TERRENO
+                                  </p>   
+                                  <br>
+                                  <textarea rows="7" cols ="40" autofocus>
+                                        
+                                  </textarea> 
+                                  <br>
+                                  Número para contacto:<input type="numero" name="fname"><br>
+                          
+                                  <center>
+                                                  <button class="button button5">
+                                                          <a href="menu.html">
+                                                                 AGREGAR   </a>
+                                                      </button>  
+                                              </center>
+                    </div>
             
         </div>
     </section>
@@ -105,23 +145,29 @@
                     </a>
                 </button>  
         </center>
-        <script>
+       <script>
+                        
                         function abrir(){
-                                document.getElementById("flot").style.display="block";
+                                document.getElementById("flotprimero").style.display="block";
+                                document.getElementById("1").style.display="none";
+                                
                         }
-                    
                         function cerrar(){
-                                document.getElementById("flot").style.display="none";
+                                document.getElementById("flotprimero").style.display="none";
+                                document.getElementById("1").style.display="block";      
                         }
 
                         function abrir2(){
-                                document.getElementById("flota").style.display="block";
-                                cerrar();
+                                document.getElementById("flotultimo").style.display="block";
+                                document.getElementById("2").style.display="none";
+                                
                         }
-                    
                         function cerrar2(){
-                                document.getElementById("flota").style.display="none";
+                                document.getElementById("flotultimo").style.display="none";
+                                document.getElementById("2").style.display="block";      
                         }
+
+
                     
                         </script>
     </footer>
