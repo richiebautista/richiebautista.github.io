@@ -32,38 +32,7 @@ h1{
     color:white;   
 }
 
-.flotante1{
-    background: white;
-    width:50%;
-    color: black;
-    font-size:18px;
-    text-align: center;
-    padding:100px;
-    border-radius:22px;
-    position:absolute;
-    left:15%;
-    top:25%;
-    display:none;
-}
-.flotante2{
-    background: white;
-    width:50%;
-    color: black;
-    font-size:18px;
-    text-align: center;
-    padding:100px;
-    border-radius:22px;
-    position:absolute;
-    left:15%;
-    top:80%;
-    display:none;
-}
 
-#cerrar,#cerrar2{
-    position:absolute;
-right:3px;
-top:1px;
-}
 .vecinos{
     border-bottom-style: solid;
     border-color: white;
@@ -237,29 +206,7 @@ footer{
     p{
         font-size: 20px;
     }
-    .flotante1{
-        background: white;
-        width:60%;
-        color: black;
-        font-size:18px;
-        text-align: center;
-        padding:50px;
-        border-radius:22px;
-        position:absolute;
-        left:10%;
-    }
-    .flotante2{
-        background: white;
-        width:60%;
-        color: black;
-        font-size:18px;
-        text-align: center;
-        padding:5px;
-        border-radius:22px;
-        position:absolute;
-        left:18%;
-        top:250%;
-    }
+    
 }
 @media only screen and (max-width:425px){
     p{
