@@ -39,28 +39,50 @@
                                 <textarea rows="7" cols ="30" autofocus>
 
                                 </textarea> 
-                                <br>  
+                                <br> 
+                                <br><br>
                                 <center>
-                                                <button class="button button4">
-                                                        <a href="menu.html">
+                                        
+                                                        <a href="javascript:abrirr()">
                                                                ENVIAR   </a>
-                                                    </button>  
+                                               
                                             </center>
                   </div>
+
+                  <div class="item box11 wow bounceInLeft" id="flotprimeroenvio">
+                        
+                      
+                        <p class="texto_enviosugerencia">
+                          <br><br><br>
+                          <br><br><br>
+                                GRACIAS POR COMPARTIR TU SUGERENCIA.
+                          </p>   
+                          <br>
+                          <br>
+                          <center>
+
+                          <img src ="img/gracias.png">
+                        </center>
+                          <br>     
+            </div>
                 <div class = "item box1 wow flipInX" id="1">
+                        <br><br><br>
                         <p>
                                 SUGERENCIAS
                                 <br>
                                 <br>        
                                 Tu opinion es importante.
+                                
                                 </p> 
                                 
-                                <br>
-                                <button class="button button2">
                                         <a href="javascript:abrir()">
                                         AGREGAR                        
                                         </a>
-                                    </button>  
+                            
+                                <center>
+                                        <img src ="img/mensaje.png">
+                                      </center>
+                                 
                 </div>
                 <div class = "item box2 wow flipInX">
                         <p>
@@ -69,6 +91,10 @@
                                 <br>
                         Antes de irte, no olvides revisar las próximas actividades de nuestra colonia.
                                 </p>
+                                <center>
+
+                                        <img src ="img/actividades.png">
+                                      </center>  
                         
                 </div>
                 
@@ -79,14 +105,19 @@
                 </div>
 
                 <div class = "item box5 wow flipInX" id="2">
+                        <br><br>
                         <p>
                                 ¿Tienes lotes/terrenos disponibles?
                         </p>
-                                <button class="button button3">
-                                        <a href="javascript:abrir2()">
+                              
+                                 <a href="javascript:abrir2()">
                                         AGREGAR                              
                                   </a>
-                                    </button>  
+                                  
+                                    <center>
+
+                                        <img src ="img/casa.png">
+                                      </center>
                              
                 </div>
 
@@ -97,30 +128,44 @@
                                    DESCRIBE TU LOTE/TERRENO
                                   </p>   
                                   <br>
+                                  <br>
                                   <textarea rows="7" cols ="30" autofocus>
                                         
                                   </textarea> 
                                   <br>
                                   Número para contacto:<input type="numero" name="fname"><br>
-                          
+                                  <br>
                                   <center>
-                                                  <button class="button button5">
-                                                          <a href="menu.html">
+                                                          <a href="javascript:abrir22()">
                                                                  AGREGAR   </a>
-                                                      </button>  
+                                                      
                                               </center>
                     </div>
-            
+                    <div class="item box66 wow bounceInLeft" id="flotultimoenvio">
+                        
+                      
+                        <p class="texto_envioterreno">
+                          <br><br><br>
+                          <br><br><br>
+                                GRACIAS POR COMPARTIR TU LOTE/TERRENO.
+                          </p>   
+                          <br>
+                          <br>
+                          <center>
+
+                          <img src ="img/gracias.png">
+                        </center>
+                          <br>   
+                          <br>     
+            </div>    
         </div>
     </section>
     <footer>
             
     <center>
-            <button class="button button1">
-                    <a href="index.html">
-                            REGRESAR A PÁGINA DE INICIO    
-                    </a>
-                </button>  
+                <a class="pruebaboton" href="index.html">
+                        REGRESAR A PÁGINA DE INICIO    
+                </a>
         </center>
        <script>
                         
@@ -128,6 +173,11 @@
                                 document.getElementById("flotprimero").style.display="block";
                                 document.getElementById("1").style.display="none";
                                 
+                        }
+                        function abrirr(){
+                                document.getElementById("flotprimeroenvio").style.display="block";
+                                document.getElementById("flotprimero").style.display="none";
+                               
                         }
                         function cerrar(){
                                 document.getElementById("flotprimero").style.display="none";
@@ -137,6 +187,11 @@
                         function abrir2(){
                                 document.getElementById("flotultimo").style.display="block";
                                 document.getElementById("2").style.display="none";
+                                
+                        }
+                        function abrir22(){
+                                document.getElementById("flotultimoenvio").style.display="block";
+                                document.getElementById("flotultimo").style.display="none";
                                 
                         }
                         function cerrar2(){

@@ -2,6 +2,26 @@
     padding: 0;
     margin: 0;
 }
+a{
+    margin: 0 auto;
+    padding:10px;
+    background-color: white;
+    color:black;
+    border:2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;    
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: #014901;
+    color:white;
+    font-weight: bold;
+    border:2px solid white;
+
+}
+
 nav{
     background:black;
     color:white;
@@ -38,19 +58,7 @@ h1{
 }
 
 
-.flotante1{
-    background: white;
-    width:50%;
-    color: black;
-    font-size:18px;
-    text-align: center;
-    padding:100px;
-    border-radius:22px;
-    position:absolute;
-    left:15%;
-    top:25%;
-    display:none;
-}
+
 
 #cerrar{
     position:absolute;
@@ -113,59 +121,33 @@ top:1px;
         grid-area: uno; 
         background-repeat: round;
         color:white;
+        display:grid; 
+        text-align: center;
     }
 
-    .box1:hover, .box2:hover ,.box4:hover, .box5:hover{
-        color:black;
-    }
+  
     .box2{
         grid-area: dos; 
         color:white;
        padding:40px;
+       display:grid; 
+       text-align: center;
     }
     .box4{
         grid-area: cuatro; 
         color:white;
+        display:grid; 
     }
     .box5{
         grid-area: cinco; 
         color:white;
+        display:grid; 
     }
 
 footer{
     background: black;
     padding:30px;
 }
-    .button {
-        background-color:red;
-        color:white;
-        padding:2vmin 2vmax;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size:1em;
-        margin: 20px 5px;
-        -webkit-transition-duration: 0.4s;
-        transition-duration: 0.4;
-        cursor: pointer;
-    }
-
-    a{
-        text-decoration: none;
-    }   
-.button1, .button2, .button3,.button4,.button5{
-    background-color: white;
-    color:black;
-    border:2px solid #014901;
-}
-
-.button1:hover,.button2:hover, .button3:hover,.button4:hover,.button5:hover{
-    background-color: #014901;
-    color:white;
-    font-weight: bold;
-    border:2px solid white;
-}
-
 /*RESPONSIVE*/
 
 @media only screen and (max-width:768px){
@@ -193,17 +175,7 @@ footer{
         font-size: 20px;
     }
 
-    .flotante1{
-        background: white;
-        width:60%;
-        color: black;
-        font-size:18px;
-        text-align: center;
-        padding:50px;
-        border-radius:22px;
-        position:absolute;
-        left:10%;
-    }
+    
 }
 @media only screen and (max-width:425px){
     p{

@@ -15,6 +15,9 @@
 </head>
 <nav class ="wow bounceInRight"> 
         <p>COLONIA LA SELVA</p>
+        <a class="regreso" href="index.html">
+                        REGRESAR 
+                </a>
 </nav>
 <div class ="vecinos wow bounceInUp" data-wow-duration="1.3s">
         <p>
@@ -29,7 +32,8 @@
         
         <div class ="principal">
                
-                <div class = "item box1 wow flipInX">
+   <!--RESIDENTES-->
+                <div class = "item box1 wow flipInX" id="residentes">
                 
                        <p>USUARIO:</p>            
                         <br>
@@ -38,23 +42,87 @@
                         <P>CONTRASEÑA:</P>
                         <br>
                         <input type ="password" name= "password" id="password" placeholder="Ingresar tu contraseña" autocomplete="off"> 
-                        <BR>
+                        <BR><br><br>
                         <center>
-                                <button class="button button1">
+                                
                                 <a href="menu.html">
                                        INGRESAR
                                 </a>
-                               </button>
-                               
-                               <button class="button button1">
-                                <a href="index.html">
+                             
+                               <br><br><br>
+                       
+                                <a href="login.html">
                                         REGRESAR    
                                 </a>
-                            </button>  
+                             
                         </center> 
                 </div>
-
+ <!--ADMIN-->
+ <div class = "item box2 wow flipInX" id="admin">
+                
+        <p>USUARIO:</p>            
+         <br>
+         <input type ="text" name= "nombre" id="password" placeholder="Ingresar tu usuario" autocomplete="off" autofocus> 
+         <br><br>
+         <P>CONTRASEÑA:</P>
+         <br>
+         <input type ="password" name= "password" id="password" placeholder="Ingresar tu contraseña" autocomplete="off"> 
+         <BR><br><br>
+         <center>
+                 
+                 <a href="admin.html">
+                        INGRESAR
+                 </a>
+              
+                <br><br><br>
+        
+                 <a href="login.html">
+                         REGRESAR    
+                 </a>
+              
+         </center> 
+ </div>
+ 
+    <!--Pregunta-->  
+ <div class = "item box3 wow flipInX" id="pregunta">
+                
+        <p>SELECCIONA TIPO DE USUARIO</p>
+        <br><br>
+         <center>
+                 
+                <img src ="img/admin.png">
+                <br><br>
+                 <a href="javascript:abrir_a()">
+                        ADMINISTRADOR
+                 </a>
+              
+                <br><br><br>
+                <img src ="img/residente.png">
+                <br><br>
+                 <a href="javascript:abrir_r()">
+                         RESIDENTE    
+                 </a>
+              
+         </center> 
+ </div>
         </div>
-    </section>    
+   
+  
+</section>    
+
+    <script>
+        function abrir_a(){
+            document.getElementById("admin").style.display="block";
+            document.getElementById("pregunta").style.display="none";
+            
+    }
+    function abrir_r(){
+            document.getElementById("residentes").style.display="block";
+            document.getElementById("pregunta").style.display="none";
+           
+    }
+    </script>
+
 </body>
+
 </html>

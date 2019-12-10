@@ -2,6 +2,26 @@
     padding: 0;
     margin: 0;
 }
+a{
+    margin: 0 auto;
+    padding:10px;
+    background-color: white;
+    color:black;
+    border:2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;    
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: #014901;
+    color:white;
+    font-weight: bold;
+    border:2px solid white;
+
+}
+
 nav{
     background:black;
     color:white;
@@ -102,6 +122,13 @@ h1{
     display:none;
     margin: 0 auto;
 }
+.box11{
+    grid-area: uno; 
+    background-repeat: round;
+    color:white;
+    display:none;
+    margin: 0 auto;
+}
 
 textarea{
     font-size: 18px;
@@ -109,15 +136,18 @@ textarea{
 }
 
     .box1{
+        display:grid; 
         grid-area: uno; 
         background-repeat: round;
         color:white;
     }
-
-    .box1:hover, .box2:hover ,.box4:hover, .box5:hover{
+/*
+    .box1:hover, .box2:hover ,.box4:hover, .box5:hover,.box11:hover{
         color:black;
     }
+   */ 
     .box2{
+        display:grid; 
         grid-area: dos; 
         color:white;
        padding:40px;
@@ -127,11 +157,19 @@ textarea{
         color:white;
     }
     .box5{
+        display:grid; 
         grid-area: cinco; 
         color:white;
     }
 
     .box6{
+        grid-area: cinco; 
+        background-repeat: round;
+        color:white;
+        display:none;
+        margin: 0 auto;
+    }
+    .box66{
         grid-area: cinco; 
         background-repeat: round;
         color:white;
@@ -146,40 +184,7 @@ footer{
     background: black;
     padding:30px;
 }
-    .button {
-        background-color:red;
-        color:white;
-        padding:2vmin 2vmax;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size:1em;
-        margin: 20px 5px;
-        -webkit-transition-duration: 0.4s;
-        transition-duration: 0.4;
-        cursor: pointer;
-    }
-
-    a{
-        text-decoration: none;
-    }   
-
-    .botoncerrar{
-        padding:20px;
-    }
-.button1, .button2, .button3, .button4,.button5{
-    background-color: white;
-    color:black;
-    border:2px solid #014901;
-}
-
-.button1:hover,.button2:hover, .button3:hover, .button4:hover, .button5:hover{
-    background-color: #014901;
-    color:white;
-    font-weight: bold;
-    border:2px solid white;
-}
-
+ 
 /*RESPONSIVE*/
 
 @media only screen and (max-width:768px){
