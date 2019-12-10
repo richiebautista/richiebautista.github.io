@@ -3,7 +3,9 @@
     margin: 0;
 }
 
-
+iframe{
+   width: 100%;
+}
 a{
     margin: 0 auto;
     padding:10px;
@@ -137,11 +139,12 @@ h1{
     "dos dos doss doss "
     "tres tres tress tress "
     "cuatro cuatro cuatros cuatros"
-    
+    "cinco cinco cinco cinco"
+
     ;
     
 }
-.principal  .box1, .box2,.box22,.box3,.box33,.box4,.box44{
+.principal  .box1, .box2,.box22,.box3,.box33,.box4,.box44,.box5{
     border-bottom-style: solid;
     border-color: white;
     border-width: 1px;
@@ -228,13 +231,13 @@ h1{
     color:white;
     background-image: url("img/valores2.jpg"); 
 }
-/*
+
 .box5{
-    grid-area: cincos;
+    grid-area: cinco;
     color:white;
 
 }
-
+/*
 .box55{
     grid-area: cinco;
     background-image: url("img/gallery2.jpg"); 
@@ -281,7 +284,7 @@ footer{
         "tres"
         "cuatro"
         "cuatros"
-        
+        "cinco"
         ;
     }
   #content{
