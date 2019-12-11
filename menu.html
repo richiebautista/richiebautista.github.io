@@ -36,10 +36,19 @@
                                  COMPARTE TU SUGERENCIA
                                 </p>   
                                 <br>
-                                <textarea rows="7" cols ="30" autofocus>
+                               <form id="contact-form" class="contact" name="contact-form" method="post" action="enviar.php">
+
+                           
+                               <input type="text" name="nombre" class="form-control name-field" placeholder="Ingresa tu número de lote"> 
+                               <input type="text" name="email" class="form-control mail-field" placeholder="Ingresa su correo"> 
+                             
+                               <textarea rows="7"  name="mensaje" id="mensaje" required="required" class="form-control" placeholder="Ingresa tu sugerencia">
 
                                 </textarea> 
+                               <button type="submit" class="btn btn-primary">Enviar</button>
                                 <br> 
+                        </form>
+                               
                                 <br><br>
                                 <center>
                                         

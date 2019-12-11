@@ -13,7 +13,41 @@
               </script>
 
 
+<style>
+    html,body,#map-canvas{
+        height: 100%;
+        margin:0px;
+        padding:0px;
+    }
+</style>
+<!--
+    <script src="https://maps.googleapis.com/maps/api/js?v3.exp&signed_in=true">
+   AIzaSyDB33bKut1OMmyxbF-htaQWlNr2ES6n_qw
+-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC12lEJ4ayaK4P_jbQouoPnM6mzie1xSfQ&callback=initialize">
 
+</script>
+<script>
+function initialize (){
+    var myLatlng = new google.maps.LatLng(14.57379, -90.60771);
+    var mapOptions = {
+        zoom:15,
+        center: myLatlng
+    }
+    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions)
+
+    var marker = new google.maps.Marker(
+        {
+            position: myLatlng,
+            map: map,
+            title: 'COLONIA LA SELVA'
+        }
+    );
+}
+google.maps.event.addDomListener(window,'load',initialize);
+</script>
+
+        
 
 </head>
 <nav class="wow bounceInRight">
